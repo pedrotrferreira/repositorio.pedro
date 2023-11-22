@@ -1,0 +1,140 @@
+/* Importa duas fontes do Google Fonts: Krona One e Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+/* Define estilos para todos os elementos, zerando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+.cabecalho {
+    padding: 2% 0% 0% 33%;
+    margin-bottom: 120px; /* Adicione margem na parte inferior do cabeçalho */
+}
+
+/* Estilos para o menu do cabeçalho */
+.cabecalho-menu {
+    display: flex;
+    gap: 100px;
+}
+
+.cabecalho-menu-links{
+    font-family: 'Papyrus', 'sans-serif';
+    font-size: 24px;
+    font-weight: 800;
+    align-items: center;
+    color: #800000;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #51ff00, -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #23fa07;
+}
+
+/* Estilos para o elemento <body> */
+body {
+    margin: 0;
+    background-color: #000000; /* Fundo preto */
+    background-image: linear-gradient(45deg, #ff0000, #000000 30%, #000000 70%, #ff0000); /* Gradiente vermelho e preto */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif; /* Fonte básica, mas você pode escolher outra se preferir */
+    color: #ffffff; /* Texto branco para contraste */
+}
+
+/* Espaçamento entre o cabeçalho (header) e o conteúdo principal (main) */
+
+
+/* Espaçamento entre o conteúdo principal (main) e o rodapé (footer) */
+.sobre-mim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px; /* Adicione margem na parte inferior do conteúdo principal */
+    justify-content: space-between;
+    color: #ff0303;
+}
+
+.texto {
+    flex: 1;
+    padding: 20px; /* Ajuste o espaçamento conforme necessário */
+    margin-bottom: 20px;
+}
+
+.titulo{
+     /* Define o tamanho da fonte como 36px */
+     font-size: 36px;
+
+     /* Define a família de fontes como 'Krona One' com fallback para sans-serif */
+     font-family: 'Papyrus', 'sans-serif';
+ 
+     /* Alinha o texto justificado */
+     text-align: justify;
+
+     /* Adicione uma margem inferior para separar do parágrafo */
+     margin-bottom: 20px; /* Você pode ajustar esse valor conforme necessário */
+}
+
+
+
+
+.paragrafo{
+     /* Define o tamanho da fonte como 24px */
+     font-size: 24px;
+
+     /* Define a família de fontes como 'Montserrat' com fallback para sans-serif */
+     font-family: 'Montserrat', sans-serif;
+ 
+     /* Alinha o texto justificado */
+     text-align: justify;
+     margin-bottom: 20px;
+}
+
+.imagemsobremim {
+    flex: 1;
+    flex-direction: row;
+    text-align: center; /* Centraliza a imagem horizontalmente */
+    
+    position: relative; /* Permite sobrepor elementos filhos */
+    overflow: hidden; /* Esconde elementos filhos que podem estender além da imagem */
+    transition: 0.3s ease-in-out; /* Efeito de escurecimento com transição suave quando o mouse passa sobre a imagem */
+}
+
+.imagemsobremim:hover {
+    filter: brightness(0.7); /* Escurece a imagem em 30% (70% de brilho) ao passar o mouse */
+}
+
+.imagemfamiliagoku {
+    max-width: 100%; /* A imagem se ajustará ao tamanho do contêiner pai */
+    height: auto;
+    border-radius: 10px; /* Adiciona curvatura nos cantos do elemento */
+    transition: transform 0.3s ease-in-out; /* Efeito de transição suave ao passar o mouse sobre a imagem */
+}
+
+/* Efeito de escala suave ao passar o mouse sobre a imagem */
+.imagemsobremim:hover .imagemfamiliagoku {
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% ao passar o mouse */
+}
+
+
+/* Espaçamento entre o conteúdo principal (main) e o rodapé (footer) */
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: #800000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Papyrus', 'sans-serif';
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+/* Estilo de link no rodapé */
+.rodape a:hover {
+    color: #FFA500;
+}
+
